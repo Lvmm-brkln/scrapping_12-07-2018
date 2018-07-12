@@ -9,17 +9,17 @@ def crypto(url)
     
     hash = {}
     
-    if doc
-
     	#recupere le nom de la cryptomonnaie
         name_crypto =  doc.css('#currencies-all tbody tr')
+    if doc
+
         
         
         name_crypto.each{ |x|
             #creation du hash qui sera dans le hash du name crypto
             hash2 = {}
             hash2['price'] = x.css('td a.price').text
-            hash2['taux'] = x.css('td.percent-change').text
+            hash2['taux'] = x.css("[@data-timespan='1h']").text
             
 
             #enregistre le deuxième hash dans le hash principal contenant les noms des cryptomonnaies
