@@ -1,1 +1,1 @@
-# scrapping_12-07-2018
+Laëtitia et Alexys ont travaillé sur ce projet :)
